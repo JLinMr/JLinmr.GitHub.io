@@ -11,6 +11,96 @@
   </url>
   
   <url>
+    <loc>https://blog.bsgun.cn/categories/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/charts/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/comments/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/cookies/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/copyright/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/disclaimer/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/essay/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/fcircle/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/link/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bsgun.cn/privacy/index.html</loc>
+    
+    <lastmod>2024-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.bsgun.cn/tags/index.html</loc>
     
     <lastmod>2024-08-09</lastmod>
@@ -154,96 +244,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.bsgun.cn/categories/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/charts/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/comments/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/cookies/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/copyright/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/disclaimer/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/essay/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/fcircle/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/link/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/privacy/index.html</loc>
-    
-    <lastmod>2024-08-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://blog.bsgun.cn/</loc>
@@ -254,119 +254,119 @@
 
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/API/</loc>
+    <loc>https://blog.bsgun.cn/tags/API/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/hexo/</loc>
+    <loc>https://blog.bsgun.cn/tags/hexo/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E5%AE%9D%E5%A1%94/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E9%9B%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E9%9B%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E6%80%9D%E7%A7%91%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E6%80%9D%E7%A7%91%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/vercel/</loc>
+    <loc>https://blog.bsgun.cn/tags/vercel/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E7%99%BD%E5%AB%96/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E7%99%BD%E5%AB%96/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/Umami/</loc>
+    <loc>https://blog.bsgun.cn/tags/Umami/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/51LA/</loc>
+    <loc>https://blog.bsgun.cn/tags/51LA/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E6%B4%BB%E5%8A%A8/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E6%B4%BB%E5%8A%A8/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/NPS%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://blog.bsgun.cn/tags/NPS%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bsgun.cn/%E6%A0%87%E7%AD%BE/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <loc>https://blog.bsgun.cn/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2024-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
