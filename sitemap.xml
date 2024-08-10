@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.bsgun.cn/friend.json</loc>
+    <loc>https://blog.bsgun.cn/tags/index.html</loc>
     
     <lastmod>2024-08-10</lastmod>
     
@@ -146,6 +146,15 @@
   </url>
   
   <url>
+    <loc>https://blog.bsgun.cn/friend.json</loc>
+    
+    <lastmod>2024-08-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.bsgun.cn/about/index.html</loc>
     
     <lastmod>2024-08-10</lastmod>
@@ -237,15 +246,6 @@
   
   <url>
     <loc>https://blog.bsgun.cn/privacy/index.html</loc>
-    
-    <lastmod>2024-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bsgun.cn/tags/index.html</loc>
     
     <lastmod>2024-08-10</lastmod>
     
