@@ -259,35 +259,6 @@
     
     
     <entry>
-      <title>关于API接口--持续分享</title>
-      <link href="/posts/49303/"/>
-      <url>/posts/49303/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p><strong>本文内容已无效</strong></p></blockquote><p>因为一些原因呢，我原先的Api停止服务了！</p><table><thead><tr><th align="left">API列表</th><th align="left">功能</th><th align="left">地址</th></tr></thead><tbody><tr><td align="left">随机动漫图</td><td align="left">顾名思义随机刷新动漫图</td><td align="left">失效</td></tr><tr><td align="left">Qrcode二维码</td><td align="left">生成链接二维码</td><td align="left">失效</td></tr><tr><td align="left">Bing每日一图</td><td align="left">获取Bing每日的背景图</td><td align="left">失效</td></tr><tr><td align="left">QQ头像和昵称</td><td align="left">获取QQ的头像地址和QQ昵称</td><td align="left">失效</td></tr><tr><td align="left">QQ在线查询</td><td align="left">查询QQ是否在线-离线</td><td align="left">失效</td></tr><tr><td align="left">随机一言</td><td align="left">定时送上一份鸡汤</td><td align="left">失效</td></tr><tr><td align="left">网易云音乐解析</td><td align="left">到点了上号</td><td align="left">失效</td></tr></tbody></table><p>Bye-bye</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 教程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> API </tag>
-            
-            <tag> 分享 </tag>
-            
-            <tag> 白嫖 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>博客现状</title>
       <link href="/posts/33483/"/>
       <url>/posts/33483/</url>
@@ -323,98 +294,11 @@
       
         <tags>
             
-            <tag> 白嫖 </tag>
-            
             <tag> 阿里云 </tag>
             
             <tag> 活动 </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Packet Tracer思科模拟器入门教程(三)</title>
-      <link href="/posts/26735/"/>
-      <url>/posts/26735/</url>
-      
-        <content type="html"><![CDATA[<h2 id="实验目标"><a href="#实验目标" class="headerlink" title="实验目标"></a>实验目标</h2><ul><li>掌握采用Telnet方式配置交换机的方法。</li></ul><h2 id="实验背景"><a href="#实验背景" class="headerlink" title="实验背景"></a>实验背景</h2><ul><li>配置交换机的管理IP地址（计算机的<code>IP</code>地址与交换机管理<code>IP</code>地址在同一个网段）：</li><li>为<code>telnet</code>用户配置用户名和登录口令：</li><li>交换机、路由器中有很多密码，设置对这些密码可以有效的提高设备的安全性。</li><li>switch(config)#<code>enable password ******</code> 设置进入特权模式的密码</li><li>switch(config-line)可以设置通过<code>console</code>端口连接设备及<code>Telnet</code>远程登录时所需的密码；</li><li>switch(config)#<code>line vty 0 4</code></li><li>switch(config-line)#<code>password XXX</code></li><li>switch(config-line)#<code>login</code></li></ul><h2 id="实验设备"><a href="#实验设备" class="headerlink" title="实验设备"></a>实验设备</h2><p><code>电脑；手；脑子；Switch_2960 1台；PC 1台；直连线；配置线</code></p><h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><h3 id="1-新建Packet-Tracer拓扑图"><a href="#1-新建Packet-Tracer拓扑图" class="headerlink" title="1. 新建Packet Tracer拓扑图"></a>1. 新建Packet Tracer拓扑图</h3><p>详细见 Packet Tracer思科模拟器入门教程(一)</p><h3 id="2-配置交换机管理ip地址"><a href="#2-配置交换机管理ip地址" class="headerlink" title="2. 配置交换机管理ip地址"></a>2. 配置交换机管理ip地址</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Switch&gt; en           <span class="comment">//进入特权模式</span></span><br><span class="line">Switch<span class="meta"># conf t       <span class="comment">//进入全局配置模式</span></span></span><br><span class="line">Switch(config)<span class="meta"># int  vlan 1           <span class="comment">// 创建并进入VLAN 1的接口视图</span></span></span><br><span class="line">Switch(config-<span class="keyword">if</span>)<span class="meta"># ip  address **IP** 子网掩码          <span class="comment">//在VLAN1接口上配置交换机远程管理的IP地址</span></span></span><br><span class="line">Switch(config-<span class="keyword">if</span>)<span class="meta"># no shutdown        <span class="comment">//开启接口</span></span></span><br><span class="line">Switch(config-<span class="keyword">if</span>)<span class="meta">#exit        <span class="comment">//回到全局配置模式</span></span></span><br></pre></td></tr></table></figure><hr><h3 id="3-配置用户登录密码"><a href="#3-配置用户登录密码" class="headerlink" title="3. 配置用户登录密码"></a>3. 配置用户登录密码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Switch(config)<span class="meta"># enable password ***         <span class="comment">//设置进入特权模式的密码</span></span></span><br><span class="line">Switch(config)<span class="meta"># <span class="keyword">line</span> vty 0 4           <span class="comment">//进入远程登录用户管理视图，0-4个用户</span></span></span><br><span class="line">Switch(config-line)<span class="meta"># password XXX</span></span><br><span class="line">Switch(config-line)<span class="meta"># username ml password 123</span></span><br><span class="line">Switch(config-line)<span class="meta"># privilege level 3          <span class="comment">//配置远程登录用户的权限为最高级别权限3</span></span></span><br><span class="line">Switch(config-line)<span class="meta"># login        <span class="comment">//打开登录认证功能</span></span></span><br><span class="line">Switch(config-line)<span class="meta"># end         <span class="comment">//退出到特权模式</span></span></span><br><span class="line">Switch<span class="meta"># show run           <span class="comment">//显示当前交换机配置情况</span></span></span><br></pre></td></tr></table></figure><h2 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h2><p><strong>进入 <code>Cmd</code>输入以下进行测试</strong></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ping <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span>         <span class="comment">//成功以后，再做下一步</span></span><br><span class="line">telnet <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br><span class="line">输入password:<span class="number">123456</span>    <span class="comment">//登录成功，进入用户模式</span></span><br><span class="line">Switch&gt;Enable     <span class="comment">//进入特权模式，新版会自动进入特权模式</span></span><br><span class="line">Switch#</span><br></pre></td></tr></table></figure><p><img src="https://cdn.bsgun.cn/2024/06/27/666f1b01d84fe.webp" alt="检测"></p><h2 id="实验心得"><a href="#实验心得" class="headerlink" title="实验心得"></a>实验心得</h2><p>学会配置交换机telnet功能，并通过PC来进行远程登陆配置交换机</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网络基础 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络 </tag>
-            
-            <tag> 交换机 </tag>
-            
-            <tag> 思科模拟器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Packet Tracer思科模拟器入门教程(二)</title>
-      <link href="/posts/63693/"/>
-      <url>/posts/63693/</url>
-      
-        <content type="html"><![CDATA[<h2 id="实验目标"><a href="#实验目标" class="headerlink" title="实验目标"></a>实验目标</h2><ul><li>掌握交换机基本信息的配置管理。</li></ul><h3 id="技术原理"><a href="#技术原理" class="headerlink" title="技术原理"></a>技术原理</h3><ul><li><p>交换机的管理方式基本分为两种：带内管理和带外管理。</p><p>通过交换机的Console端口管理交换机属于带外管理；这种管理方式不占用交换机的网络端口，第一次配置交换机必须利用Console端口进行配置。<br>通过Telnet、拨号等方式属于带内管理。</p></li><li><p>交换机的命令行操作模式主要包括：</p></li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用户模式      Switch&gt;</span><br><span class="line">特权模式       Switch*#*</span><br><span class="line">全局配置模式   Switch(config)*#*</span><br><span class="line">端口模式       Switch(config-<span class="keyword">if</span>)*#</span><br></pre></td></tr></table></figure><h3 id="实验设备"><a href="#实验设备" class="headerlink" title="实验设备"></a>实验设备</h3><p><code>电脑；手；脑子；思科模拟器；Switch_2960 1台； PC 2台； 直连线</code><br><img src="https://cdn.bsgun.cn/2024/06/27/666f19ea27ddc.webp" alt="示意"></p><h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><h3 id="1-点击PC0，选择选择Config选项，单击FastEthernet0选项"><a href="#1-点击PC0，选择选择Config选项，单击FastEthernet0选项" class="headerlink" title="1.点击PC0，选择选择Config选项，单击FastEthernet0选项"></a>1.点击PC0，选择选择Config选项，单击FastEthernet0选项</h3><p>将PC0设为100Mbps的速率，运行模式设为全双工模式<br><img src="https://cdn.bsgun.cn/2024/06/27/666f19f3319e6.webp" alt="设置"></p><h3 id="2-点击交换机，选择CLI，进入命令行界面"><a href="#2-点击交换机，选择CLI，进入命令行界面" class="headerlink" title="2.点击交换机，选择CLI，进入命令行界面"></a>2.点击交换机，选择CLI，进入命令行界面</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/666f1a043f347.webp" alt="命令界面"></p><h3 id="3-配置交换机"><a href="#3-配置交换机" class="headerlink" title="3.配置交换机"></a>3.配置交换机</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">修改交换机名、端口</span><br><span class="line">Switch&gt;enable    <span class="comment">//进入特权模式</span></span><br><span class="line">Switch<span class="meta">#conf  t   <span class="comment">//进入配置模式</span></span></span><br><span class="line">Switch(config)<span class="meta">#hostname  S2960    <span class="comment">//修改交换机名</span></span></span><br><span class="line">S2960(config)<span class="meta">#interface fa 0/1    <span class="comment">//选择端口</span></span></span><br><span class="line">S2960(config-<span class="keyword">if</span>)<span class="meta">#speed 100       <span class="comment">//修改端口速率为100Mbps</span></span></span><br><span class="line">S2960(config-<span class="keyword">if</span>)<span class="meta">#duplex full    <span class="comment">//修改为全双工模式</span></span></span><br><span class="line">S2960(config-<span class="keyword">if</span>)<span class="meta">#exit            <span class="comment">//退出端口设置</span></span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.bsgun.cn/2024/06/27/666f1a1273bdf.webp" alt="示例"></p><h3 id="4-查看交换机配置信息"><a href="#4-查看交换机配置信息" class="headerlink" title="4.查看交换机配置信息"></a>4.查看交换机配置信息</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">查看交换机各项配置参数</span><br><span class="line">Switch<span class="meta">#show version         <span class="comment">//查看交换机版本信息</span></span></span><br><span class="line">Switch<span class="meta">#show running-config            <span class="comment">// 查看当前生效的配置信息</span></span></span><br><span class="line">Switch<span class="meta">#show interface            <span class="comment">//查看端口信息</span></span></span><br><span class="line">Switch<span class="meta">#show mac-address-table    <span class="comment">//查看交换机的MAC地址</span></span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.bsgun.cn/2024/06/27/666f1a3e98d81.webp" alt="示例"><br><img src="https://cdn.bsgun.cn/2024/06/27/666f1a48e6021.webp" alt="示例"><br><img src="https://cdn.bsgun.cn/2024/06/27/666f1a50b2513.webp" alt="示例"><br><img src="https://cdn.bsgun.cn/2024/06/27/666f1a5da05b8.webp" alt="示例"></p><h3 id="5-密码设置与取消"><a href="#5-密码设置与取消" class="headerlink" title="5.密码设置与取消"></a>5.密码设置与取消</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Switch<span class="meta">#config t</span></span><br><span class="line">Switch(config)<span class="meta">#enable  password  cisco   <span class="comment">//设置进入特权模式的密码为cisco</span></span></span><br><span class="line">Switch(config)<span class="meta">#no enable password    <span class="comment">//取消特权模式密码</span></span></span><br><span class="line"><span class="comment">//switch(config-line)可以设置通过console端口连接设备及Telnet远程登录时所需的密码</span></span><br><span class="line">Switch(config)<span class="meta">#<span class="keyword">line</span> console 0      <span class="comment">//表示配置控制台线路，0是控制台的线路编号</span></span></span><br><span class="line">Switch(config-line)<span class="meta">#password cisco    <span class="comment">//设置进入控制台访问的密码</span></span></span><br><span class="line">Switch(config-line)<span class="meta">#login    <span class="comment">//用于打开登录认证功能</span></span></span><br><span class="line">Switch(config-line)<span class="meta">#no password   <span class="comment">//取消密码</span></span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.bsgun.cn/2024/06/27/666f1a6a40b3e.webp" alt="示例"></p><h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>目的是让我们学会如何切换交换机的命令模式并配置基本命令本文转自<a href="https://blog.csdn.net/gengkui9897/article/details/85109962">柚子君</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网络基础 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络 </tag>
-            
-            <tag> 交换机 </tag>
-            
-            <tag> 思科模拟器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Packet Tracer思科模拟器入门教程(一)</title>
-      <link href="/posts/14441/"/>
-      <url>/posts/14441/</url>
-      
-        <content type="html"><![CDATA[<h2 id="了解Packet-Tracer"><a href="#了解Packet-Tracer" class="headerlink" title="了解Packet Tracer"></a>了解Packet Tracer</h2><p>今天我开学以来第一次上实训基础课，记录一下</p><h3 id="Packet-Tracer介绍"><a href="#Packet-Tracer介绍" class="headerlink" title="Packet Tracer介绍"></a>Packet Tracer介绍</h3><ol><li>Packet Tracer是Cisco公司针对CCNA认证开发的一个用来设计、配置和故障排除网络的模拟软件。</li><li>Packer Tracer模拟器软件比Boson功能强大，比Dynamips操作简单，非常适合网络设备初学者使用。</li><li>Packet Tracer模拟器是考CCNA必须掌握的软件。</li></ol><h2 id="学习任务"><a href="#学习任务" class="headerlink" title="学习任务"></a>学习任务</h2><ol><li>安装Packer Tracer；</li><li>利用一台型号为2960的交换机将2pc机互连组建一个小型局域网；</li><li>分别设置pc机的ip地址；</li><li>验证pc机间可以互通。</li></ol><h2 id="实验设备"><a href="#实验设备" class="headerlink" title="实验设备"></a>实验设备</h2><p><code>电脑；手；脑子；思科模拟器；Switch_2960 1台； PC 2台； 直连线</code><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f4616f224.webp" alt="示意"></p><h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><h3 id="1-选择网络设备"><a href="#1-选择网络设备" class="headerlink" title="1.选择网络设备"></a>1.选择网络设备</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f47d7c18b.webp" alt="网络设备"></p><h3 id="2-选择交换机"><a href="#2-选择交换机" class="headerlink" title="2.选择交换机"></a>2.选择交换机</h3><p>!<img src="https://cdn.bsgun.cn/2024/06/27/6673f4d10af13.webp" alt="交换机"></p><h3 id="3-在交换机中选择2960型号的交换机"><a href="#3-在交换机中选择2960型号的交换机" class="headerlink" title="3.在交换机中选择2960型号的交换机"></a>3.在交换机中选择2960型号的交换机</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f5140ca45.webp" alt="2960型号"></p><h3 id="4-将其拖入到面板中"><a href="#4-将其拖入到面板中" class="headerlink" title="4.将其拖入到面板中"></a>4.将其拖入到面板中</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f533e55cb.webp" alt="拖到面板"></p><h3 id="5-在端设备选项中选择PC并拖入到面板中"><a href="#5-在端设备选项中选择PC并拖入到面板中" class="headerlink" title="5.在端设备选项中选择PC并拖入到面板中"></a>5.在端设备选项中选择PC并拖入到面板中</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f5487f497.webp" alt="选中PC"><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f55142b4f.webp" alt="初步完成"></p><h3 id="6-选择连接选项"><a href="#6-选择连接选项" class="headerlink" title="6.选择连接选项"></a>6.选择连接选项</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f55b852e4.webp" alt="选中连接"></p><h3 id="7-选择直通线，将两台PC的FastEthernet口连接到交换机"><a href="#7-选择直通线，将两台PC的FastEthernet口连接到交换机" class="headerlink" title="7.选择直通线，将两台PC的FastEthernet口连接到交换机"></a>7.选择直通线，将两台PC的FastEthernet口连接到交换机</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f5674205f.webp" alt="选择直通线"><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f57054bb1.webp" alt="FastEthernet口连接"><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f5c466d6d.webp" alt="FastEthernet口连接"><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f62d6a63b.webp" alt="FastEthernet口连接"><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f6419bb5f.webp" alt="FastEthernet口连接"></p><h3 id="8-连接好后设备连线后将会变为绿色"><a href="#8-连接好后设备连线后将会变为绿色" class="headerlink" title="8.连接好后设备连线后将会变为绿色"></a>8.连接好后设备连线后将会变为绿色</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f68a7420a.webp" alt="连接成功"></p><h3 id="9-点击PC2，进入PC2窗口，选择Desktop选项卡，选择IP-Configuration"><a href="#9-点击PC2，进入PC2窗口，选择Desktop选项卡，选择IP-Configuration" class="headerlink" title="9.点击PC2，进入PC2窗口，选择Desktop选项卡，选择IP Configuration"></a>9.点击PC2，进入PC2窗口，选择Desktop选项卡，选择IP Configuration</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f69f0f2bb.webp" alt="PC2"></p><h3 id="10-配置相关参数"><a href="#10-配置相关参数" class="headerlink" title="10.配置相关参数"></a>10.配置相关参数</h3><p><code>PC2</code></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">IP：          <span class="number">192.168</span><span class="number">.1</span><span class="number">.2</span></span><br><span class="line">Submask：     <span class="number">255.255</span><span class="number">.255</span><span class="number">.0</span></span><br><span class="line">Gateway：     <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f6b056c79.webp" alt="PC2"></p><p>使用相同的方式配置PC3</p><p><code>PC3</code></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">IP：          <span class="number">192.168</span><span class="number">.1</span><span class="number">.3</span></span><br><span class="line">Submask：     <span class="number">255.255</span><span class="number">.255</span><span class="number">.0</span></span><br><span class="line">Gateway：     <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f6bdbcfae.webp" alt="PC3"></p><h3 id="11-使用PC2-ping-PC3"><a href="#11-使用PC2-ping-PC3" class="headerlink" title="11.使用PC2 ping PC3"></a>11.使用PC2 ping PC3</h3><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f715a2120.webp" alt="选择ping命令"></p><p>注意！这里不要直接ping PC3，只能ping+ip地址</p><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f7207a2a6.webp" alt="PC2 ping PC3"></p><p>同理，PC3 ping PC2</p><p><img src="https://cdn.bsgun.cn/2024/06/27/6673f728622bd.webp" alt="PC3 ping PC2"></p><p>而因为此处没有路由器充当网关，因此无法ping通<code>192.168.1.1</code><br><img src="https://cdn.bsgun.cn/2024/06/27/6673f732320ee.webp" alt="无法ping通"></p><h2 id="实验目的"><a href="#实验目的" class="headerlink" title="实验目的"></a>实验目的</h2><p>目的是让我们对Packet Tracer思科模拟器有一定的了解本文转自<a href="https://blog.csdn.net/gengkui9897/article/details/85107429">柚子君</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网络基础 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络 </tag>
-            
-            <tag> 交换机 </tag>
-            
-            <tag> 思科模拟器 </tag>
+            <tag> 白嫖 </tag>
             
         </tags>
       
