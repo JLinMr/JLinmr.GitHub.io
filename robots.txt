@@ -1,15 +1,5 @@
 User-agent: *
-Allow: /
-Allow: /archives/
-Allow: /categories/
-Allow: /tags/
-Allow: /about/
-Allow: /essay/
-Allow: /fcircle/
-Allow: /charts/
-
-
-Disallow: /vendors/
+Disallow: /anzhiyu/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
