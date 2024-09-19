@@ -1,9 +1,9 @@
-name: 部署到Github Pages
+name: Deploy Static Website to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # 或者你使用的分支名
 
 jobs:
   deploy:
@@ -17,4 +17,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+        publish_dir: ./  # 指定根目录
+        keep_files: true  # 保留现有文件
+        force_orphan: true  # 强制使用孤立分支
