@@ -62,7 +62,7 @@ jobs:
           OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
           OSS_BUCKET_NAME: ${{ secrets.OSS_BUCKET_NAME }}
         run: |
-          python3 -c "import oss2; auth = oss2.Auth('$OSS_ACCESS_KEY_ID', '$OSS_ACCESS_KEY_SECRET'); bucket = oss2.Bucket(auth, '$OSS_ENDPOINT', '$OSS_BUCKET_NAME'); bucket.put_object_from_file('path/to/your/file', 'path/to/your/file')"
+          python3 -c "import oss2; auth = oss2.Auth('$OSS_ACCESS_KEY_ID', '$OSS_ACCESS_KEY_SECRET'); bucket = oss2.Bucket(auth, '$OSS_ENDPOINT', '$OSS_BUCKET_NAME'); bucket.put_object_from_file('Blog', 'Blog')"
         # 使用 OSS SDK 上传文件到阿里云 OSS
         # 需要设置以下 Secrets：
         # OSS_ACCESS_KEY_ID: OSS 访问密钥 ID
