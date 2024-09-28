@@ -49,7 +49,7 @@ jobs:
         # 检出代码库
 
       - name: Upload to OSS
-        uses: aliyun/oss-upload-action@v1
+        uses: aliyun/setup-aliyun-cli-action@v1
         with:
           accessKeyId: ${{ secrets.OSS_ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
