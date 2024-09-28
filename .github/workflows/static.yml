@@ -1,80 +1,25 @@
-name: Deploy static content to GitHub Pages and OSS
+name: Deploy static content to GitHub Pages
 
-# 触发条件：当主分支有推送时触发
 on:
   push:
     branches: ["main"]
 
-# 设置 GITHUB_TOKEN 的权限
 permissions:
-  contents: read  # 允许读取仓库内容
-  pages: write   # 允许写入 GitHub Pages
-  id-token: write  # 允许写入 ID 令牌
+  contents: read
+  pages: write
+  id-token: write
 
-# 并发控制：只允许一个部署任务运行，不取消正在进行的任务
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # 部署到 GitHub Pages 的任务
-  deploy-pages:
-    runs-on: ubuntu-latest  # 运行在最新的 Ubuntu 环境
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        # 检出代码库
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        # 配置 GitHub Pages
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-        # 上传构建的静态文件到 GitHub Pages
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        # 部署到 GitHub Pages
-
-  # 上传到阿里云 OSS 的任务
-  upload-oss:
-    runs-on: ubuntu-latest  # 运行在最新的 Ubuntu 环境
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        # 检出代码库
-
-      - name: Install Python and OSS SDK
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install oss2
-        # 安装 Python 和 OSS SDK
-
-      - name: Upload to OSS
-        env:
-          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
-          OSS_BUCKET_NAME: ${{ secrets.OSS_BUCKET_NAME }}
-        run: |
-          python3 -c "
-          import oss2, os
-          auth = oss2.Auth('$OSS_ACCESS_KEY_ID', '$OSS_ACCESS_KEY_SECRET')
-          bucket = oss2.Bucket(auth, '$OSS_ENDPOINT', '$OSS_BUCKET_NAME')
-          for root, dirs, files in os.walk('Blog'):
-              for file in files:
-                  local_file = os.path.join(root, file)
-                  oss_key = os.path.relpath(local_file, 'Blog')
-                  bucket.put_object_from_file(oss_key, local_file)
-          "
-        # 使用 OSS SDK 上传文件到阿里云 OSS
-        # 需要设置以下 Secrets：
-        # OSS_ACCESS_KEY_ID: OSS 访问密钥 ID
-        # OSS_ACCESS_KEY_SECRET: OSS 访问密钥 Secret
-        # OSS_ENDPOINT: OSS 服务端点
-        # OSS_BUCKET_NAME: OSS 存储桶名称
+      - uses: actions/deploy-pages@v4
