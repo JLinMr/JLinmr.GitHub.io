@@ -48,20 +48,24 @@ jobs:
         uses: actions/checkout@v4
         # 检出代码库
 
+      - name: Install Python and OSS SDK
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install oss2
+        # 安装 Python 和 OSS SDK
+
       - name: Upload to OSS
-        uses: x-actions/aliyun-oss-upload@v1
-        with:
-          accessKeyId: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          accessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          endpoint: ${{ secrets.OSS_ENDPOINT }}
-          bucket: ${{ secrets.OSS_BUCKET_NAME }}
-          source: '.'
-          target: '/'
-        # 使用 x-actions/aliyun-oss-upload 上传文件到阿里云 OSS
+        env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_ENDPOINT: ${{ secrets.OSS_ENDPOINT }}
+          OSS_BUCKET_NAME: ${{ secrets.OSS_BUCKET_NAME }}
+        run: |
+          python3 -c "import oss2; auth = oss2.Auth('$OSS_ACCESS_KEY_ID', '$OSS_ACCESS_KEY_SECRET'); bucket = oss2.Bucket(auth, '$OSS_ENDPOINT', '$OSS_BUCKET_NAME'); bucket.put_object_from_file('path/to/your/file', 'path/to/your/file')"
+        # 使用 OSS SDK 上传文件到阿里云 OSS
         # 需要设置以下 Secrets：
         # OSS_ACCESS_KEY_ID: OSS 访问密钥 ID
         # OSS_ACCESS_KEY_SECRET: OSS 访问密钥 Secret
         # OSS_ENDPOINT: OSS 服务端点
         # OSS_BUCKET_NAME: OSS 存储桶名称
-        # source: 要上传的文件或目录
-        # target: OSS 目标目录
